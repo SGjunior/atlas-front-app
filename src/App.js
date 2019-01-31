@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MyFirstComponent from "./components/MyFirstComponent.js";
 
 class App extends Component {
   render() {
@@ -21,6 +22,10 @@ class App extends Component {
           </a>
 
           <div>This the beginning of your atlas front end project</div>
+          <br/>
+          <hr/>
+          <br/>
+          <MyFirstComponent  aProp="hello prop!" />
         </header>
       </div>
     );
