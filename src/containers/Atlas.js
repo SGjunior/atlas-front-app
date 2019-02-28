@@ -105,42 +105,44 @@ class Atlas extends Component {
                                       <React.Fragment><br/><span>Notes: {grid["notes"]}</span></React.Fragment>
                                     }
                                     </div>
-                                  <div className="grid-info-container">
+                                    <div style={{"display":"flex"}}>
+                                    <div className="grid-info-container" style={{"margin-right":"auto", "margin-left":"0px"}}>
 
-                                    { (grid["ressources"] && grid["ressources"].length > 0)
-                                      &&
-                                      grid["ressources"].map((ressource) => {
-                                        return (
-                                          <a key={ressource["name"]} className="ressourceLink" target="_blank" href={`https://atlas.gamepedia.com${ressource["source_href"]}`}>
-                                            <div style={{"backgroundImage": `url(${ressource["thumbnail_small"]})`, "height": "20px", "width": "20px"}}></div>
-                                            <span>{ressource["name"]}</span>
-                                          </a>
-                                        )
-                                      })
-                                    }
-                                    { (grid["plants"] && grid["plants"].length > 0)
-                                      &&
-                                      grid["plants"].map((plant) => {
-                                        return (
-                                          <a key={plant["name"]} className="ressourceLink" target="_blank" href={`https://atlas.gamepedia.com${plant["source_href"]}`}>
-                                            <div style={{"backgroundImage": `url(${plant["thumbnail_small"]})`, "height": "20px", "width": "20px"}}></div>
-                                            <span>{plant["name"]}</span>
-                                          </a>
-                                        )
-                                      })
-                                    }
-                                  </div>
-                                  <div className="grid-info-container" style={{"float":"right"}}>
-                                    { (grid["animals"] && grid["animals"].length > 0)
-                                      &&
-                                      grid["animals"].map((animal) => {
-                                        return (
-                                          <a key={animal["name"]} className="ressourceLink" target="_blank" href={`https://atlas.gamepedia.com${animal["source_href"]}`}>
-                                            <span>{animal["name"]}</span>
-                                          </a>
-                                        )
-                                      })
-                                    }
+                                      { (grid["ressources"] && grid["ressources"].length > 0)
+                                        &&
+                                        grid["ressources"].map((ressource) => {
+                                          return (
+                                            <a key={ressource["name"]} className="ressourceLink" target="_blank" href={`https://atlas.gamepedia.com${ressource["source_href"]}`}>
+                                              <div style={{"backgroundImage": `url(${ressource["thumbnail_small"]})`, "height": "20px", "width": "20px"}}></div>
+                                              <span>{ressource["name"]}</span>
+                                            </a>
+                                          )
+                                        })
+                                      }
+                                      { (grid["plants"] && grid["plants"].length > 0)
+                                        &&
+                                        grid["plants"].map((plant) => {
+                                          return (
+                                            <a key={plant["name"]} className="ressourceLink" target="_blank" href={`https://atlas.gamepedia.com${plant["source_href"]}`}>
+                                              <div style={{"backgroundImage": `url(${plant["thumbnail_small"]})`, "height": "20px", "width": "20px"}}></div>
+                                              <span>{plant["name"]}</span>
+                                            </a>
+                                          )
+                                        })
+                                      }
+                                    </div>
+                                    <div className="grid-info-container" style={{"margin-left":"auto","margin-right":"0px"}}>
+                                      { (grid["animals"] && grid["animals"].length > 0)
+                                        &&
+                                        grid["animals"].map((animal) => {
+                                          return (
+                                            <a key={animal["name"]} className="ressourceLink" target="_blank" href={`https://atlas.gamepedia.com${animal["source_href"]}`}>
+                                              <span>{animal["name"]}</span>
+                                            </a>
+                                          )
+                                        })
+                                      }
+                                    </div>
                                   </div>
                                 </div>
                                 )
