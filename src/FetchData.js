@@ -1,6 +1,7 @@
 export const FetchAtlasData = () => {
   // floatType === 'OPEN' || floatType === 'CLOSE'
-  return fetch(`http://localhost:3005/api/v1/data`, {
+  // return fetch(`http://localhost:3005/api/v1/data`, {
+  return fetch(`https://mapatlas.herokuapp.com/api/v1/data`, {
     method: 'GET',
     headers: {
       'Content-type': 'application/json',
