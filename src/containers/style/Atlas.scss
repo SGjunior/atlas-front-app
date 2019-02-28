@@ -1,0 +1,96 @@
+.navbar {
+  position: absolute;
+  top: 0;
+  background: whitesmoke;
+  width: 100vw;
+  height: 4vh;
+  color: black;
+}
+
+.main-app {
+  position: absolute;
+  top: 4vh;
+  width: 100vw;
+  height: 96%;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.grid-row {
+  width: 9000px;
+  height: 600px;
+
+  &.small {
+    width: 6000px;
+    height: 400px;
+  }
+
+  &.smallest {
+    width: 3000px;
+    height: 200px;
+  }
+
+  // flex-wrap: nowrap
+  // background-color: red;
+  // min-width: 1000px;x
+  // min-height: 1000px;
+}
+
+.grid-name {
+  text-align: left;
+  padding: 10px;
+
+  span {
+    color: whitesmoke;
+    font-size: 13px;
+  }
+}
+
+.gridContainer {
+  // width: 6.7vw;
+  // height: 6.7vh;
+  display: inline;
+  float: left;
+  width: 600px;
+  height: 600px;
+  background-size: cover;
+  position: relative;
+  // z-index: 1;
+  transition: all .2s ease-in-out;
+  &:hover {
+    // transform: scale(1.2);
+    // z-index: 100;
+  }
+  // overflow: wrap;
+
+  &.small {
+    width: 400px;
+    height: 400px;
+  }
+
+  &.smallest {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.grid-info-container {
+  left: 5px;
+  border: 2px white;
+  padding: 10px;
+
+}
+.ressourceLink {
+  display: flex;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+
+  span {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+  }
+}
+
+
